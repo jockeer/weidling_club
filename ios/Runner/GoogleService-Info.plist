@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>839837285812-ro79hhji6ct7elpoka67ojsjdcv2ae8h.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.839837285812-ro79hhji6ct7elpoka67ojsjdcv2ae8h</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>839837285812-86uslm710850qb7bsgc9ifjh4pmbieud.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAD0YskCzmAFAF8X2KKqYzxAONOVvHPyQQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>839837285812</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.loyaltyclubs.weidlingclubs</string>
+	<key>PROJECT_ID</key>
+	<string>loyaltyclubs-36d7a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>loyaltyclubs-36d7a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:839837285812:ios:0b7ab5cc4d64a36b4f86e1</string>
+	<key>DATABASE_URL</key>
+	<string>https://loyaltyclubs-36d7a.firebaseio.com</string>
+</dict>
+</plist>

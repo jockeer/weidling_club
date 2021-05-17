@@ -1,0 +1,83 @@
+name: weidling
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter  
+    
+  cupertino_icons: ^1.0.2
+  rxdart: ^0.21.0
+  http:
+  flutter_plugin_pdf_viewer: ^1.0.7
+  shared_preferences: ^0.5.2
+  modal_progress_hud: ^0.1.3
+  bubble_tab_indicator: ^0.1.4
+  pull_to_refresh: ^1.5.7
+  url_launcher: ^6.0.3
+  connectivity: ^0.4.8+6
+  # webview_flutter: ^0.3.22+1
+  firebase_messaging: ^6.0.16
+  flushbar: ^1.10.4
+  sqflite: ^1.3.1
+  path_provider: ^1.1.0
+  google_maps_flutter: ^0.5.28+1
+  location: ^3.0.2
+  webview_flutter: ^2.0.4
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.8.1 
+
+flutter_icons:
+  android: "launcher_icon" 
+  ios: true
+  image_path: "assets/icons/icon_sa.jpg"
+  adaptive_icon_background: "assets/icons/icon_sa.jpg"
+    
+
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/imagenes/fondo_fridolin.jpg
+    - assets/imagenes/logo_fridolin.png
+    - assets/imagenes/primera_pagina.png
+    - assets/imagenes/segunda_pagina.png
+    - assets/imagenes/tercera_pagina.png
+    - assets/icons/icon.png
+    - assets/gifs/pre_loading.gif
+    - assets/imagenes/preguntas_blanco.png
+    - assets/imagenes/transaccion_blanco.png
+    - assets/imagenes/logo_80x47.png
+    - assets/imagenes/logo_130x77.png
+    - assets/imagenes/logo_150x89.png
+    - assets/imagenes/no_internet.jpg
+    - assets/imagenes/fondo_1100x652.png
+    - assets/imagenes/homeandcook.png
+    - assets/icons/icon_sa.jpg
+    - assets/imagenes/imagenes_farmacorp/farmacorp_logo.png
+    - assets/imagenes/imagenes_farmacorp/logo_fondo_azul.png

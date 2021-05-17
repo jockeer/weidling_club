@@ -1,0 +1,243 @@
+{
+  "project_info": {
+    "project_number": "839837285812",
+    "firebase_url": "https://loyaltyclubs-36d7a.firebaseio.com",
+    "project_id": "loyaltyclubs-36d7a",
+    "storage_bucket": "loyaltyclubs-36d7a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839837285812:android:1368096bcb92d48a4f86e1",
+        "android_client_info": {
+          "package_name": "com.loyaltyclubs.weidling"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "839837285812-9jpbiuk9vpun1o1vss6d7dgkle6le4ro.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLhkeq6XfC0CRCxaQ7H6mZKyYjfJ5DFV0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "839837285812-9jpbiuk9vpun1o1vss6d7dgkle6le4ro.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "839837285812-oh4mhier535o72s0a5q954b7kv0folu4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.loyaltyclubs.weidling"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839837285812:android:b5acbcef2d2ea7de4f86e1",
+        "android_client_info": {
+          "package_name": "com.loyaltyclubs.flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "839837285812-tnsqus7j7c4djvja9b8v7g56sf19gp8q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.loyaltyclubs.flutter",
+            "certificate_hash": "78c2a8d0152a83f05f4b2fa27a41a2f5b78f2bf7"
+          }
+        },
+        {
+          "client_id": "839837285812-9jpbiuk9vpun1o1vss6d7dgkle6le4ro.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLhkeq6XfC0CRCxaQ7H6mZKyYjfJ5DFV0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "839837285812-9jpbiuk9vpun1o1vss6d7dgkle6le4ro.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "839837285812-oh4mhier535o72s0a5q954b7kv0folu4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.loyaltyclubs.weidling"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839837285812:android:490e95520b73476f4f86e1",
+        "android_client_info": {
+          "package_name": "com.loyaltyclubs.weidling"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "839837285812-9jpbiuk9vpun1o1vss6d7dgkle6le4ro.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLhkeq6XfC0CRCxaQ7H6mZKyYjfJ5DFV0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "839837285812-9jpbiuk9vpun1o1vss6d7dgkle6le4ro.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "839837285812-oh4mhier535o72s0a5q954b7kv0folu4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.loyaltyclubs.weidling"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839837285812:android:8de6950b174bc0204f86e1",
+        "android_client_info": {
+          "package_name": "com.loyaltyclubs.shell"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "839837285812-9jpbiuk9vpun1o1vss6d7dgkle6le4ro.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLhkeq6XfC0CRCxaQ7H6mZKyYjfJ5DFV0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "839837285812-9jpbiuk9vpun1o1vss6d7dgkle6le4ro.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "839837285812-oh4mhier535o72s0a5q954b7kv0folu4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.loyaltyclubs.weidling"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839837285812:android:4cd31a7d20389d0e4f86e1",
+        "android_client_info": {
+          "package_name": "com.loyaltyclubs.venta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "839837285812-ssbmsk5fov464dpgm7fkuj04a941jfuc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.loyaltyclubs.venta",
+            "certificate_hash": "78c2a8d0152a83f05f4b2fa27a41a2f5b78f2bf7"
+          }
+        },
+        {
+          "client_id": "839837285812-9jpbiuk9vpun1o1vss6d7dgkle6le4ro.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLhkeq6XfC0CRCxaQ7H6mZKyYjfJ5DFV0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "839837285812-9jpbiuk9vpun1o1vss6d7dgkle6le4ro.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "839837285812-oh4mhier535o72s0a5q954b7kv0folu4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.loyaltyclubs.weidling"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839837285812:android:055d125cd72819824f86e1",
+        "android_client_info": {
+          "package_name": "com.stellarclubs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "839837285812-9jpbiuk9vpun1o1vss6d7dgkle6le4ro.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLhkeq6XfC0CRCxaQ7H6mZKyYjfJ5DFV0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "839837285812-9jpbiuk9vpun1o1vss6d7dgkle6le4ro.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "839837285812-oh4mhier535o72s0a5q954b7kv0folu4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.loyaltyclubs.weidling"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
