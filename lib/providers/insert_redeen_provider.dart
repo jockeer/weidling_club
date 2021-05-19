@@ -18,7 +18,7 @@ class InsertRedeenProvider {
   void refrescarToken (BuildContext contexto) async{  //este metodo aqui en flutter es el mismo de hitRefreshUserSpecificAccessTokenApi() en el nativo
           final String base           = NetworkApp.Base;
           final String endPointLogin  = NetworkEndPointsApp.loginUser;
-          String urlFinal = base + endPointLogin;
+          Uri urlFinal = Uri.parse(base + endPointLogin);
 
           final http.Response respuesta = await http.post(urlFinal, 
               
@@ -58,7 +58,7 @@ class InsertRedeenProvider {
       this.mapaADevolver = new Map();
       final String base = NetworkApp.Base;
       final String endPointLogin = NetworkEndPointsApp.insertarRedencion;
-       String urlFinal = base + endPointLogin ;
+       Uri urlFinal = Uri.parse(base + endPointLogin) ;
 
       String userSpecificToken = preferencias.devolverValor(Constantes.userSpecificToken, "");
       String tipo              = ( Theme.of(contexto).platform == TargetPlatform.iOS ) ? "IOS" : "ANDROID";

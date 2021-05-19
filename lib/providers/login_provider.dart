@@ -10,7 +10,7 @@ class LoginProvider {
   Future<bool> loginUser(String nroCarnet, String password) async {
     final String base = NetworkApp.Base;
     final String endPointLogin = NetworkEndPointsApp.loginUser;
-    final String urlFinal = base + endPointLogin;
+    final Uri urlFinal = Uri.parse(base + endPointLogin);
 
     http.Response respuesta;
     try {

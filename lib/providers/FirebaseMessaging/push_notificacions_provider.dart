@@ -2,12 +2,19 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 
 
 class PushNotificacionProvider{
-
-     FirebaseMessaging _firebaseMessaging = FirebaseMessaging();
+     FirebaseMessaging _firebaseMessaging =  FirebaseMessaging.instance;
 
     void initNotifications(){
 
-        _firebaseMessaging.requestNotificationPermissions();
+        _firebaseMessaging.requestPermission(
+          alert: true,
+          announcement: false,
+          badge: true,
+          carPlay: false,
+          criticalAlert: false,
+          provisional: false,
+          sound: true,
+        );
 
     }
 

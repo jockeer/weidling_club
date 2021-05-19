@@ -14,7 +14,7 @@ class UpdateUserProvider {
 
       final String base = NetworkApp.Base;
       final String endPointLogin = NetworkEndPointsApp.modificarUsuario;
-      final String urlFinal = base + endPointLogin;
+      final Uri urlFinal = Uri.parse(base + endPointLogin);
 
       http.Response respuesta;    
        
@@ -49,7 +49,7 @@ class UpdateUserProvider {
                           ///desde aqui para recupearar token
                           final String base           = NetworkApp.Base;
                       final String endPointLogin  = NetworkEndPointsApp.loginUser;
-                      String urlFinal = base + endPointLogin;
+                      Uri urlFinal = Uri.parse(base + endPointLogin);
 
                       final http.Response respuesta = await http.post(urlFinal, 
                           

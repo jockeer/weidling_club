@@ -14,7 +14,7 @@ class RegisterProvider {
 
       final String base = NetworkApp.Base;
       final String endPointLogin = NetworkEndPointsApp.registrarUser;
-      final String urlFinal = base + endPointLogin;
+      final Uri urlFinal = Uri.parse(base + endPointLogin);
 
     http.Response respuesta;    
     

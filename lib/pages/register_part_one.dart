@@ -226,7 +226,7 @@ class _RegisterPartOneState extends State<RegisterPartOne> {
 
   Widget textFieldPassword(BuildContext contextoPassword) {
     final provedorDeBloc = Provider.of(contextoPassword);
-    return StreamBuilder(
+    return StreamBuilder<String>(
         stream: provedorDeBloc.password2Stream,
         builder: (BuildContext contexto, AsyncSnapshot asyncSnapshot) {
           return TextField(

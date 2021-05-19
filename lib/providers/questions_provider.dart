@@ -10,9 +10,9 @@ class PreguntasProvider {
   final preferencias = new SharedPreferencesapp();
 
   void hitAccessTokenApi() async {
-    String url = NetworkApp.Base +
+    Uri url = Uri.parse(NetworkApp.Base +
         NetworkEndPointsApp.hitAccesToken +
-        "?client_id=ItacambaApp&client_secret=MWU5MTFlMTg1NzI5YjkyZWY4YTNiNjhkNDBiOWY2NGU";
+        "?client_id=ItacambaApp&client_secret=MWU5MTFlMTg1NzI5YjkyZWY4YTNiNjhkNDBiOWY2NGU");
     final http.Response respuesta = await http.get(url);
     Map<String, dynamic> respuestaEnMap = jsonDecode(respuesta.body);
 
@@ -37,7 +37,7 @@ class PreguntasProvider {
     http.Response respuesta;
 
     try {
-      respuesta = await http.get(urlFinal);
+      respuesta = await http.get(Uri.parse(urlFinal));
     } catch (e) {
       this.listaPreguntas.add(new Pregunta(
           question: "Tiempo de espera excedido, verificar internet"));

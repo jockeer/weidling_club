@@ -133,9 +133,9 @@ void _obTenerInformacion(){ //prueba imei
   }
 
   Future hitAccessTokenApi() async {
-    String url = NetworkApp.Base +
+    Uri url = Uri.parse(NetworkApp.Base +
         NetworkEndPointsApp.hitAccesToken +
-        "?client_id=ItacambaApp&client_secret=MWU5MTFlMTg1NzI5YjkyZWY4YTNiNjhkNDBiOWY2NGU";
+        "?client_id=ItacambaApp&client_secret=MWU5MTFlMTg1NzI5YjkyZWY4YTNiNjhkNDBiOWY2NGU");
     http.Response respuesta;
 
     try {

@@ -15,7 +15,7 @@ class ChangePassProvider {
   void refrescarToken (BuildContext contexto) async{  //este metodo aqui en flutter es el mismo de hitRefreshUserSpecificAccessTokenApi() en el nativo
           final String base           = NetworkApp.Base;
           final String endPointLogin  = NetworkEndPointsApp.loginUser;
-          String urlFinal = base + endPointLogin;
+          Uri urlFinal = Uri.parse(base + endPointLogin);
 
           http.Response respuesta;
 
@@ -63,7 +63,7 @@ class ChangePassProvider {
 
       final String base = NetworkApp.Base;
       final String endPointLogin = NetworkEndPointsApp.changePassword;
-      final String urlFinal = base + endPointLogin;
+      final Uri urlFinal = Uri.parse(base + endPointLogin);
 
       http.Response respuesta;    
     

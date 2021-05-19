@@ -50,7 +50,7 @@ class CarritoProvider{
         Map<String, dynamic> mapaADevolverTwo = Map();
         final String base = NetworkApp.Base;
                     final String endPointLogin = NetworkEndPointsApp.enviarCarritoDeCompra;
-                    final String urlFinal = base + endPointLogin;
+                    final Uri urlFinal = Uri.parse(base + endPointLogin);
 
                     http.Response respuesta;    
                     try {

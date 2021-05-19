@@ -117,7 +117,7 @@ class BlocLoyalty with Validador {
   String get ultimoValorMontRedeenTwo => _streamControllerMontoRedeenTwo.value;
 
   Stream<bool> get validarCamposRedeenTwo =>
-      Observable.combineLatest2(streamTiendaRedeenTwo, streamMontoRedeenTwo,
+      Rx.combineLatest2(streamTiendaRedeenTwo, streamMontoRedeenTwo,
           (valor, valor1) {
         return true;
       });
@@ -159,7 +159,7 @@ class BlocLoyalty with Validador {
   String get ultimoValorConfirPassChangePs =>
       _streamControllerChangePassConfirmPass.value;
 
-  Stream<bool> get validarCamposChangePass => Observable.combineLatest3(
+  Stream<bool> get validarCamposChangePass => Rx.combineLatest3(
           streamCContrasenaActualChangeP,
           streamCNuevaContraChangeP,
           streamConfirPassChangeP, (valor1, valor2, valor3) {
@@ -224,7 +224,7 @@ class BlocLoyalty with Validador {
   String get ultimoValorFechaNacDetalleCu =>
       _streamControllerFechaNacDetalleCuenta.value;
 
-  Stream<bool> get validarCamposDetalleCuenta => Observable.combineLatest4(
+  Stream<bool> get validarCamposDetalleCuenta => Rx.combineLatest4(
           streamNameDetalleCuenta,
           streamLastNamedDetalleCuenta,
           streamEmailDetalleCuenta,
@@ -329,7 +329,7 @@ class BlocLoyalty with Validador {
   String get ultimoValorCelular => _streamControllerCelular.value;
   bool get ultimoValorTermsAndCond => _streamControllerTandC.value;
 
-  Stream<bool> get validarRegistrosParteTwo => Observable.combineLatest7(
+  Stream<bool> get validarRegistrosParteTwo => Rx.combineLatest7(
           streamCi_Nit,
           streamCiudadExpedicion,
           streamFechaNacimiento,
@@ -389,7 +389,7 @@ class BlocLoyalty with Validador {
 
   //validador de login
   Stream<bool> get validarCampos =>
-      Observable.combineLatest2(contrasenaStream, ciStream, (valor, valor1) {
+      Rx.combineLatest2(contrasenaStream, ciStream, (valor, valor1) {
         print("==================");
         print(valor);
         print("==================");
@@ -397,7 +397,7 @@ class BlocLoyalty with Validador {
       });
 
   //validador de registro pantalla 1
-  Stream<bool> get validarUsuario => Observable.combineLatest4(
+  Stream<bool> get validarUsuario => Rx.combineLatest4(
           nameStream, lastnamelStream, emailStream, password2Stream,
           (valor2, valor3, valor4, valor5) {
         print("==================");

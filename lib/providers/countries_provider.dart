@@ -10,9 +10,9 @@ class Countries {
   final preferencias = new SharedPreferencesapp();
 
   Future hitAccessTokenApi() async {
-    String url = NetworkApp.Base +
+    Uri url = Uri.parse(NetworkApp.Base +
         NetworkEndPointsApp.hitAccesToken +
-        "?client_id=ItacambaApp&client_secret=MWU5MTFlMTg1NzI5YjkyZWY4YTNiNjhkNDBiOWY2NGU";
+        "?client_id=ItacambaApp&client_secret=MWU5MTFlMTg1NzI5YjkyZWY4YTNiNjhkNDBiOWY2NGU");
     final http.Response respuesta = await http.get(url);
     Map<String, dynamic> respuestaEnMap = jsonDecode(respuesta.body);
 
@@ -38,7 +38,7 @@ class Countries {
       body: {"access_token": accessToken}
     */
     try {
-      respuesta = await http.get(urlFinal);
+      respuesta = await http.get(Uri.parse(urlFinal));
     } catch (e) {
       return this.mapaResultadoADevolver = {
         Constantes.estado: Constantes.respuesta_estado_fail,

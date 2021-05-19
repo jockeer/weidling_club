@@ -14,7 +14,7 @@ class ValidatePinProvider {
       Map<String, String> parametros) async {
     final String base = NetworkApp.Base;
     final String endPointLogin = NetworkEndPointsApp.validatePinUser;
-    final String urlFinal = base + endPointLogin;
+    final Uri urlFinal = Uri.parse(base + endPointLogin);
 
     http.Response respuesta;
 

@@ -10,8 +10,8 @@ class Base {
   Future hitAccessTokenApi() async {
     String tokenYClave =
         "?client_id=ItacambaApp&client_secret=MWU5MTFlMTg1NzI5YjkyZWY4YTNiNjhkNDBiOWY2NGU";
-    String url =
-        NetworkApp.Base + NetworkEndPointsApp.hitAccesToken + tokenYClave;
+    Uri url =
+    Uri.parse(NetworkApp.Base + NetworkEndPointsApp.hitAccesToken + tokenYClave);
 
     final http.Response respuesta = await http.get(url); //se cambio a post
     Map<String, dynamic> respuestaEnMap = jsonDecode(respuesta.body);

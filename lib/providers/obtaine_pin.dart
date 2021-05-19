@@ -16,7 +16,7 @@ class  ObtainPinProvider {
 
        final String base = NetworkApp.Base;
        final String endPointLogin = NetworkEndPointsApp.obtenerPin;
-       String urlFinal = base + endPointLogin ;
+       Uri urlFinal = Uri.parse(base + endPointLogin) ;
 
        String ciUser      =   ciUserParam;
        String accessToke  =   userSpecificToken; 

@@ -17,7 +17,7 @@ class SendMessageProvider {
      void refrescarToken (BuildContext contexto) async{  //este metodo aqui en flutter es el mismo de hitRefreshUserSpecificAccessTokenApi() en el nativo
           final String base           = NetworkApp.Base;
           final String endPointLogin  = NetworkEndPointsApp.loginUser;
-          String urlFinal = base + endPointLogin;
+          Uri urlFinal = Uri.parse(base + endPointLogin);
 
           final http.Response respuesta = await http.post(urlFinal, 
               
@@ -57,7 +57,7 @@ class SendMessageProvider {
         this.mapaRespuesta = new Map();
         String userSpecificAccessToken = this.preferencias.devolverValor(Constantes.userSpecificToken, "");
 
-        String urlFinal = NetworkApp.Base + NetworkEndPointsApp.sendMessageFromContact;
+        Uri urlFinal = Uri.parse(NetworkApp.Base + NetworkEndPointsApp.sendMessageFromContact);
         http.Response respuesta;
         
         try {

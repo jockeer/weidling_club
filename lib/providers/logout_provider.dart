@@ -12,7 +12,7 @@ class LogoutProvider {
 
       final String base = NetworkApp.Base;
       final String endPointLogin = NetworkEndPointsApp.logoutUser;
-      final String urlFinal = base + endPointLogin;
+      final Uri urlFinal = Uri.parse(base + endPointLogin);
 
 
   String accessToken = this.preferencias.devolverValor(Constantes.userSpecificToken, "");

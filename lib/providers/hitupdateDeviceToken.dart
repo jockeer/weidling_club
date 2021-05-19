@@ -14,7 +14,7 @@ class TokenDeviceUpdateProvider {
   Future<Map<String, dynamic>> updateTokenDevice(String deviceToken) async {
     final String base = NetworkApp.Base;
     final String endPointLogin = NetworkEndPointsApp.actualizarTokenDevice;
-    final String urlFinal = base + endPointLogin;
+    final Uri urlFinal = Uri.parse(base + endPointLogin);
 
     http.Response respuesta;
 
