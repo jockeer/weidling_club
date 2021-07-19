@@ -488,7 +488,7 @@ class _HomePageState extends State<HomePage>
                           Constantes.respuesta_estado_ok) {
                         if (this.myPointsAndAccount != null) {
                           // _stopIsolate();
-
+                        
                           Navigator.of(contexto).popAndPushNamed(
                               HistoryTransferPage.nameOfPage,
                               arguments:
@@ -619,6 +619,7 @@ class _HomePageState extends State<HomePage>
                   if (valor[Constantes.estado] ==
                       Constantes.respuesta_estado_ok) {
                     // _stopIsolate();
+                    
 
                     Navigator.of(contexto)
                         .pushReplacementNamed(RedeemPageOne.nameOfPage);

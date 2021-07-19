@@ -142,25 +142,30 @@ class _AccountDetailState extends State<AccountDetail> {
   @override
   Widget build(BuildContext context) {
     final provedorDeBloc = Provider.of(context);
-    return Scaffold(
-      appBar: ContantsWidgetsDefaults.widgetAppBar(
-          context, Colores.COLOR_AZUL_WEIDING),
-      body: StreamBuilder<bool>(
-          stream: provedorDeBloc.streamCargandoDetalleCuenta,
-          builder: (context, snapshot) {
-            return ModalProgressHUD(
-              child: Stack(
-                children: <Widget>[_fondoApp(), _demasElementos(context)],
-              ),
-              inAsyncCall:
-                  (snapshot.data != null && snapshot.data) ? true : false,
-              color: Colors.white,
-              dismissible: false,
-              progressIndicator: CircularProgressIndicator(
-                valueColor: new AlwaysStoppedAnimation<Color>(Colors.brown),
-              ),
-            );
-          }),
+    return WillPopScope(
+      onWillPop: () {
+        return Future.value(false);
+      },
+      child: Scaffold(
+        appBar: ContantsWidgetsDefaults.widgetAppBar(
+            context, Colores.COLOR_AZUL_WEIDING),
+        body: StreamBuilder<bool>(
+            stream: provedorDeBloc.streamCargandoDetalleCuenta,
+            builder: (context, snapshot) {
+              return ModalProgressHUD(
+                child: Stack(
+                  children: <Widget>[_fondoApp(), _demasElementos(context)],
+                ),
+                inAsyncCall:
+                    (snapshot.data != null && snapshot.data) ? true : false,
+                color: Colors.white,
+                dismissible: false,
+                progressIndicator: CircularProgressIndicator(
+                  valueColor: new AlwaysStoppedAnimation<Color>(Colors.brown),
+                ),
+              );
+            }),
+      ),
     );
   }
 

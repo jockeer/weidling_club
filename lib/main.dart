@@ -48,9 +48,12 @@ class MyApp extends StatelessWidget {
           ],
           debugShowCheckedModeBanner: false,
           title: 'Weidling Club',
-          theme: ThemeData(
+          theme: ThemeData.light().copyWith(
             primaryColor: Colores.COLOR_AZUL_WEIDING,
             secondaryHeaderColor: Colores.COLOR_AZUL_WEIDING,
+            appBarTheme: AppBarTheme(
+              brightness: Brightness.dark
+            )
           ),
           initialRoute: preferencias.devolverValor(
               Constantes.last_page, WelcomePage.nameOfPage),

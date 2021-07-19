@@ -34,14 +34,19 @@ class _HistoryTransferPageState extends State<HistoryTransferPage> {
   @override
   Widget build(BuildContext context) {
     this.balance = ModalRoute.of(context).settings.arguments;
-    return Scaffold(
-      appBar: ContantsWidgetsDefaults.widgetAppBar(
-          context, Colores.COLOR_AZUL_WEIDING),
-      body: Stack(
-        children: <Widget>[
-          _fondoApp(),
-          _demasElementos(context),
-        ],
+    return WillPopScope(
+      onWillPop: () {
+        return Future.value(false);
+      },
+      child: Scaffold(
+        appBar: ContantsWidgetsDefaults.widgetAppBar(
+            context, Colores.COLOR_AZUL_WEIDING),
+        body: Stack(
+          children: <Widget>[
+            _fondoApp(),
+            _demasElementos(context),
+          ],
+        ),
       ),
     );
   }
