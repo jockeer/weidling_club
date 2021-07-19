@@ -72,41 +72,6 @@ class _WelcomePageState extends State<WelcomePage> {
         ));
   }
 
-/*
-void _obTenerInformacion(){ //prueba imei
-
-   try {
-     
-   if (Theme.of(context).platform == TargetPlatform.iOS) {
-        DeviceInfoPlugin deviceInfo = DeviceInfoPlugin();
-        deviceInfo.iosInfo
-            .then((onValue){
-              IosDeviceInfo iosDeviceInfo = onValue;
-              imeiIos =  iosDeviceInfo.identifierForVendor;
-              print("identifier ios "+ imeiIos);
-            });
-    
-    // unique ID on iOS
-  } else {
-
-     UniqueIdentifier sd = new UniqueIdentifier();   
-     UniqueIdentifier.serial
-          .then((onValue){
-             imei = onValue;
-             print("imei android "+ imei);
-          });
-   // unique ID on Android
-  }
-
-      
-   } catch ( e ) {
-      this.imeiIos = e.toString();
-      this.imei    = e.toString();
-      print(this.imeiIos);
-      print(this.imei);
-   }
-
-} */
 
   Future<Map<String, dynamic>> verificarConexion() async {
     Map<String, dynamic> resultadoDeVerificacion;
