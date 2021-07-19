@@ -462,13 +462,14 @@ class _AccountDetailState extends State<AccountDetail> {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(20.0)),
                   color: Colores.COLOR_AZUL_WEIDING),
-              height: tamanoPhone.height * 0.45,
+              height: tamanoPhone.height * 0.50,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
                   Padding(
-                    padding: const EdgeInsets.all(50.0),
+                    padding: const EdgeInsets.all(40.0),
                     child: Image(
+
                         image: AssetImage(
                             "assets/imagenes/imagenes_farmacorp/farmacorp_logo.png")),
                   ),

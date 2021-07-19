@@ -244,10 +244,6 @@ class _RegisterPartTwoState extends State<RegisterPartTwo> {
                 provedorBlocLoyalty.ultimoValorCiudadExped != "" &&
                 provedorBlocLoyalty.ultimoValorFechaNac != null &&
                 provedorBlocLoyalty.ultimoValorFechaNac != "" &&
-                provedorBlocLoyalty.ultimoValorPais != null &&
-                provedorBlocLoyalty.ultimoValorPais != "" &&
-                provedorBlocLoyalty.ultimoValorCiudad != null &&
-                provedorBlocLoyalty.ultimoValorCiudad != "" &&
                 provedorBlocLoyalty.ultimoValorCelular != null &&
                 provedorBlocLoyalty.ultimoValorCelular != "" &&
                 provedorBlocLoyalty.ultimoValorTermsAndCond != null &&
@@ -778,7 +774,7 @@ class _RegisterPartTwoState extends State<RegisterPartTwo> {
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(20.0)),
                 prefixIcon: Icon(Icons.location_city),
-                hintText: "Ciudad de expedición",
+                hintText: "Lugar de expedición",
                 // labelText: "Ciudad de expedición",
                 fillColor: Colors.white,
                 filled: true,
@@ -854,7 +850,7 @@ class _RegisterPartTwoState extends State<RegisterPartTwo> {
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(20.0)),
                 prefixIcon: Icon(Icons.person),
-                hintText: "Número de identidad",
+                hintText: "Identificación de usuario",
                 //labelText: "Cédula de identidad",
                 filled: true,
                 fillColor: Colors.white,
